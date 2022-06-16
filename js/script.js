@@ -10,6 +10,9 @@ const guestList = document.querySelector(".guest-list");
 const guestCount = document.querySelector(".attendance");
 // alert when guest list is full (not yet visible)
 const guestFull = document.querySelector(".alert");
+// select assigned items & build an array
+const assignButton = document.querySelector(".assign");
+const assignedItems = document.querySelector(".assigned-items");
 
 addGuestButton.addEventListener("click", function () {
     const guest = guestInput.value;
@@ -43,3 +46,19 @@ const updateGuestCount = function () {
   }
 };
 
+const assignItems = function () {
+    const potluckItems = [
+        "fruit salad",
+        "veggie rolls",
+        "hummus crackers",
+        "tofu chevre",
+        "gazpacho",
+        "edamame",
+        "pesto pasta",
+        "bruschetta",
+        "potato wedges",
+        "bean salad",
+        "chocolate brownies",
+        "snickerdoodles"
+    ];
+};
