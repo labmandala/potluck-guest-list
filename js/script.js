@@ -75,3 +75,7 @@ const assignItems = function () {
     }
 };
 
+assignButton.addEventListener("click", function () {
+    assignItems();
+});
+
